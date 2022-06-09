@@ -1,0 +1,57 @@
+#sub-img-one {
+    background-image: url('../Images/html.jpg');
+    background-size: 200% 100%;
+}
+
+#sub-img-two {
+    background: rgba(25, 25, 25, 1);
+    background-image: url('../Images/js.jpg');
+    background-size: 250% 200%;
+}
+
+#sub-img-three {
+    background: rgba(50, 50, 50, 1);
+    background-image: url('../Images/css.webp');
+    background-size: 100% 100%;
+}
+
+#left-side-container {
+    height: 60%;
+    width: 25%;
+    left: -50%;
+    top: 10%;
+}
+
+#bottom-side-container {
+    height: 20%;
+    bottom: -50%;
+    width: 75%;
+    left: 0%;
+}
+
+#right-side-container {
+    right: -50%;
+    bottom: 10%;
+    width: 25%;
+    height: 60%;
+}
+
+#top-side-container {
+    right: 0%;
+    width: 75%;
+    top: -50%;
+    height: 20%;
+}
+
+@media only screen and (max-width: 450px) {
+    #top-header-container {
+        background: rgba(0, 0, 0, 0.5);
+        box-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 350px)  {
+    h3[data-id="sub-header"] {
+        display: none;
+    }   
+}
