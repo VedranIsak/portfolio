@@ -90,7 +90,7 @@ export default class SkillsContainer extends Component {
 
     render() {
         return (
-            <div className={styles.mainContainer}>
+            <div id="skills-main-container" className={styles.mainContainer}>
                 <div id="side-left" className={styles.sideLeftContainer}></div>
                 <div id="centre-slide-container" className={styles.centerContainer}>
                     <div id="first-img-slide" onClick={() => {this.fadeSlide("first")}} className={styles.centreSubContainer}>

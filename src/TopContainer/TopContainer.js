@@ -39,7 +39,7 @@ export default class TopContainer extends Component {
     }
 
     scrollSite(id) {
-        
+        document.getElementById(id).scrollIntoView({"behavior": "smooth"});
     }
 
     render() {
@@ -56,16 +56,16 @@ export default class TopContainer extends Component {
                     <h3 data-id="sub-header">a small showcase of my skills and experience</h3>
                 </div>
                 <div data-id="side-container" id="left-side-container" className={styles.sideContainer}>
-                    <h3>Skills</h3>
+                    <h3 onClick={() => { this.scrollSite("skills-main-container"); }}>Skills</h3>
                 </div>
                 <div data-id="side-container" id="bottom-side-container" className={styles.sideContainer}>
-                    <h3>Experience</h3>
+                    <h3 onClick={() => { this.scrollSite("exp-main-container"); }}>Experience</h3>
                 </div>
                 <div data-id="side-container" id="right-side-container" className={styles.sideContainer}>
-                    <h3>Education</h3>
+                    <h3 onClick={() => { this.scrollSite("circle-container") }}>Education</h3>
                 </div>
                 <div data-id="side-container" id="top-side-container" className={styles.sideContainer}>
-                    <h3>Projects</h3>
+                    <h3 onClick={() => { this.scrollSite("my-work-container") }}>Projects</h3>
                 </div>
             </div>
         )
